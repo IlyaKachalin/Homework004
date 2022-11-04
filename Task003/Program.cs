@@ -7,7 +7,11 @@ int n = Convert.ToInt32(Console.ReadLine());
 
 void Cube (int x)
 {
+    if (x>0)
+    {
     for (int i = 0; i<=x; i++) Console.WriteLine ($"{i}  {i*i*i}");
+    }
+    else Console.WriteLine("Число должно быть натуральным");
 }
 
 Cube(n);
